@@ -19,8 +19,8 @@ void loop()
 {
   val = analogRead(inpin);
   pre_e = e;
-  e = 400 - val;
-  u = 4 * (e + 10 * (e - pre_e));
+  e = 200 - val;
+  u = 3 * (e + 6 * (e - pre_e));
   if (u > 255)
     u = 255;
   if (u < 0)
